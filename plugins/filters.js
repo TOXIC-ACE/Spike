@@ -1,4 +1,4 @@
-let Leon = require('../events');
+let Spike = require('../events');
 let {MessageType} = require('@adiwajshing/baileys');
 let fs = require('fs')
 let conf = require('../config');
@@ -12,7 +12,7 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + conf.HEROKU.APP_NAME;
 
-Leon.addCommand({pattern: 'filter ?(.*)', fromMe: true, desc: Lang.FILTER_DESC}, (async (message, match) => {
+Spike.addCommand({pattern: 'filter ?(.*)', fromMe: true, desc: Lang.FILTER_DESC}, (async (message, match) => {
     match = match[1].match(/[\'\"\“](.*?)[\'\"\“]/gsm);
 
     if (match === null) {
@@ -33,7 +33,7 @@ Leon.addCommand({pattern: 'filter ?(.*)', fromMe: true, desc: Lang.FILTER_DESC},
     }
 }));
 
-Leon.addCommand({pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DESC}, (async (message, match) => {
+Spike.addCommand({pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DESC}, (async (message, match) => {
     match = match[1].match(/[\'\"\“](.*?)[\'\"\“]/gsm);
     if (match === null) {
         return await message.client.sendMessage(message.jid,Lang.NEED_REPLY + '\n*Example:* ```.stop "hello"```',MessageType.text, { quoted: message.data })
@@ -48,7 +48,7 @@ Leon.addCommand({pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DESC}, (as
     }
 }));
 
-Leon.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
+Spike.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
     var filtreler = await FilterDb.getFilter(message.jid);
     if (!filtreler) return; 
     filtreler.map(
