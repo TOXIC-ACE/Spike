@@ -1,11 +1,11 @@
-let Leon = require('../events');
+let Spike = require('../events');
 let {MessageType} = require('@adiwajshing/baileys');
 let sql = require('./sql/greetings');
 let fs = require('fs');
 let Language = require('../language');
 let Lang = Language.getString('greetings');
 
-Leon.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (async (message, match) => {
+Spike.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (async (message, match) => {
     var hg = await sql.getMessage(message.jid);
     if (hg === false) {
         await message.sendReply(Lang.NOT_SET_WELCOME);
@@ -14,7 +14,7 @@ Leon.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (a
     }
 }));
 
-Leon.addCommand({pattern: 'welcome (.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Spike.addCommand({pattern: 'welcome (.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
     if (match[1] === '') {
         return await message.sendReply(Lang.NEED_WELCOME_TEXT);
     } else {
@@ -25,7 +25,7 @@ Leon.addCommand({pattern: 'welcome (.*)', fromMe: true, dontAddCommandList: true
     }
 }));
 
-Leon.addCommand({pattern: 'goodbye$', fromMe: true, desc: Lang.GOODBYE_DESC}, (async (message, match) => {
+Spike.addCommand({pattern: 'goodbye$', fromMe: true, desc: Lang.GOODBYE_DESC}, (async (message, match) => {
     var hg = await sql.getMessage(message.jid, 'goodbye');
     if (hg === false) {
         await message.sendReply(Lang.NOT_SET_GOODBYE);
@@ -34,7 +34,7 @@ Leon.addCommand({pattern: 'goodbye$', fromMe: true, desc: Lang.GOODBYE_DESC}, (a
     }
 }));
 
-Leon.addCommand({pattern: 'goodbye (.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Spike.addCommand({pattern: 'goodbye (.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
     if (match[1] === '') {
         return await message.sendReply(Lang.NEED_GOODBYE_TEXT);
     } else {
