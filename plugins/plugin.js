@@ -1,4 +1,4 @@
-let Leon = require('../events');
+let Spike = require('../events');
 let Heroku = require('heroku-client');
 let Config = require('../config');
 let {MessageType} = require('@adiwajshing/baileys');
@@ -16,7 +16,7 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-Leon.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC}, (async (message, match) => {
+Spike.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC}, (async (message, match) => {
     if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_URL, MessageType.text, { quoted: message.data });
     try {
         var url = new URL(match[1]);
@@ -44,7 +44,7 @@ Leon.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC
         try {
             require('./' + plugin_name);
         } catch (e) {
-            fs.unlinkSync('/root/Leon/plugins/' + plugin_name + '.js')
+            fs.unlinkSync('/root/Spike/plugins/' + plugin_name + '.js')
             return await message.sendReply(Lang.INVALID_PLUGIN + ' ```' + e + '```');
         }
 
@@ -53,7 +53,7 @@ Leon.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC
     }
 }));
 
-Leon.addCommand({pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC }, (async (message, match) => {
+Spike.addCommand({pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC }, (async (message, match) => {
     var mesaj = Lang.INSTALLED_FROM_REMOTE;
     var plugins = await Db.PluginDB.findAll();
     if (plugins.length < 1) {
@@ -68,7 +68,7 @@ Leon.addCommand({pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC }, (asy
     }
 }));
 
-Leon.addCommand({pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_DESC}, (async (message, match) => {
+Spike.addCommand({pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_DESC}, (async (message, match) => {
     if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_PLUGIN, MessageType.text, { quoted: message.data });
     if (!match[1].startsWith('__')) match[1] = '__' + match[1];
     var plugin = await Db.PluginDB.findAll({ where: {name: match[1]} });
