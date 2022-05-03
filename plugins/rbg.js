@@ -1,4 +1,4 @@
-let Leon = require('../events');
+let Spike = require('../events');
 let {MessageType, Mimetype} = require('@adiwajshing/baileys');
 let Config = require('../config');
 let fs = require('fs');
@@ -12,7 +12,7 @@ let Lang = Language.getString('removebg');
 
 if (Config.WORKTYPE == 'private') {
 
-    Leon.addCommand({pattern: 'rbg ?(.*)', fromMe: true, desc: Lang.REMOVEBG_DESC}, (async (message, match) => {    
+    Spike.addCommand({pattern: 'rbg ?(.*)', fromMe: true, desc: Lang.REMOVEBG_DESC}, (async (message, match) => {    
 
         if (message.reply_message === false || message.reply_message.image === false) return await message.sendReply(Lang.NEED_PHOTO);
         if (Config.RBG_API_KEY === 'false') return await message.sendReply(Lang.NO_API_KEY);
@@ -46,7 +46,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Leon.addCommand({pattern: 'rbg ?(.*)', fromMe: false, desc: Lang.REMOVEBG_DESC}, (async (message, match) => {    
+    Spike.addCommand({pattern: 'rbg ?(.*)', fromMe: false, desc: Lang.REMOVEBG_DESC}, (async (message, match) => {    
 
         if (message.reply_message === false || message.reply_message.image === false) return await message.sendReply(Lang.NEED_PHOTO);
         if (Config.RBG_API_KEY === 'false') return await message.sendReply(Lang.NO_API_KEY);
