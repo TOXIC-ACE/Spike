@@ -1,5 +1,5 @@
 build:
   docker:
-      worker: /leon/Dockerfile
+      worker: /spike/Dockerfile
 run:
    worker: npm start
