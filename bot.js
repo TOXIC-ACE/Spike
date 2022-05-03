@@ -144,10 +144,10 @@ ${chalk.green.bold("🔄 Connecting...")}`);
         });
 
         console.log(
-            chalk.green.bold('🎉 LEON IS NOW ACTIVE IN YOUR ACCOUNT!')
+            chalk.green.bold('🎉 SPIKE IS NOW ACTIVE IN YOUR ACCOUNT!')
         );
        
-         var startMsg = { en: "%2A%F0%9F%91%BB%20SPIKE%20IS%20NOW%20ACTIVE%2A", ml: "%2A%F0%9F%91%BB%20%E0%B4%B2%E0%B4%BF%E0%B4%AF%E0%B5%8B%E0%B5%BA%20%E0%B4%87%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B5%8B%E0%B5%BE%20%E0%B4%B8%E0%B4%9C%E0%B5%80%E0%B4%B5%E0%B4%AE%E0%B4%BE%E0%B4%A3%E0%B5%8D%2A", id: "%2A%F0%9F%91%BB%20Spike%20sekarang%20aktif%2A" }
+         var startMsg = { en: "%2A%F0%9F%91%BB%20SPIKE%20IS%20NOW%20ACTIVE%2A", ml: "%F0%9F%91%BB%20%E0%B4%B8%E0%B5%8D%E2%80%8C%E0%B4%AA%E0%B5%88%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%8D%20%E0%B4%87%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B5%8B%E0%B5%BE%20%E0%B4%B8%E0%B4%9C%E0%B5%8D%E0%B4%9C%E0%B4%BF%E0%B4%B5%E0%B4%82%20%E0%B4%86%E0%B4%A3%E0%B5%8D%21", id: "%2A%F0%9F%91%BB%20Spike%20sekarang%20aktif%2A" }
 
          if (config.LANG == 'EN') {
              await Spike.sendMessage(Spike.user.jid, decodeURI(startMsg.en), MessageType.text);
