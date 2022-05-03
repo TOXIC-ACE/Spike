@@ -1,7 +1,7 @@
 {
     "LANGUAGE": "Indonesian",
     "LANGCODE": "id",
-    "AUTHOR": "TOXIC-DEVIL",
+    "AUTHOR": "TOXIC-ACE",
     "STRINGS": {
         "list": {
             "COMMAND": "Perintah",
@@ -82,10 +82,10 @@
             "FRM": "Dari:"
         },
         "heroku": {
-            "RESTART_DESC": "Mulai ulang Bot",
+            "RESTART_DESC": "Mulai ulang Spike",
             "RESTART_MSG": "```🔁 memulai ulang harap tunggu...```",
-            "SHUTDOWN_DESC": "Matikan Bot",
-            "SHUTDOWN_MSG": "```mematikan Bot ⛔```",
+            "SHUTDOWN_DESC": "Matikan Spike",
+            "SHUTDOWN_MSG": "```mematikan Spike ⛔```",
             "DYNO_DESC": "Periksa penggunaan heroku dyno",
             "DYNO_TOTAL": "```Total Kuota```",
             "DYNO_USED": "```Kuota terpakai```",
@@ -209,7 +209,7 @@
             "DOWNLOADING": "```Mengunduh media & menjadikannya stiker...```"
         },
         "system_stats": {
-            "ALIVE_DESC": "Apakah bot berfungsi?",
+            "ALIVE_DESC": "Apakah spike berfungsi?",
             "SYSD_DESC": "Menunjukkan properti sistem."
         },
         "tagall": {
@@ -228,13 +228,13 @@
         "updater": {
             "UPDATER_DESC": "Periksa pembaruan.",
             "UPDATE": "*Anda benar-benar terbaru!*",
-            "NEW_UPDATE": "*🔁 Bot sedang memperbarui...!*\n\n🆕 Perubahan Setelah pembaruan ini:\n\n```",
+            "NEW_UPDATE": "*🔁 Spike sedang memperbarui...!*\n\n🆕 Perubahan Setelah pembaruan ini:\n\n```",
             "UPDATE_NOW_DESC": "Itu membuat pembaruan.",
             "UPDATING": "_Memperbarui..._", 
             "INVALID_HEROKU": "*❌ Informasi Heroku Anda salah!*",
             "UPDATED": "*✅ Pembaruan berhasil!*",
             "UPDATED_LOCAL": "*✅ Pembaruan berhasil! *\n_Anda harus memulai ulang untuk perubahan._",
-            "AFTER_UPDATE": "*💬 Memulai Ulang Bot!*",
+            "AFTER_UPDATE": "*💬 Memulai Ulang Spike!*",
             "IN_AF": "*Harap pastikan* ```HEROKU_APP_NAME``` *sama dengan* ```app name```\n*Jika kedua nilai ini sama, harap ubah* ```HEROKU_API_KEY```\n\n_Untuk mengakses pengaturan ini Heroku >> App >> Settings >> Reavel Config Vars ikuti langkahmu._\n_Untuk memperbarui kunci API Anda Heroku >> Account >> API Key Setelah menyegarkan dari bagian tersebut, ganti dengan kunci API lama._"
         },
         "whois": {
