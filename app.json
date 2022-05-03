@@ -1,14 +1,14 @@
 {
-    "name": "Leon",
+    "name": "Spike",
     "description": "A simple WhatsApp bot.",
-    "logo": "https://tinyurl.com/TOXIC-DEVIL-LOGO",
-    "keywords": ["whatsapp", "Voice", "Leon", "Bot", "bot", "api", "ai"],
-    "repository": "https://github.com/TOXIC-DEVIL/Leon",
-    "website":   "https://api-toxic-devil.herokuapp.com/",
-    "success_url": "https://api-toxic-devil.herokuapp.com/",
+    "logo": "https://github.com/TOXIC-ACE.png?size=100",
+    "keywords": ["whatsapp", "Voice", "Spike", "Bot", "bot", "api", "ai"],
+    "repository": "https://github.com/TOXIC-ACE/Spike",
+    "website":   "https://github.com/TOXIC-ACE/Spike",
+    "success_url": "https://github.com/TOXIC-ACE/Spike",
     "stack": "container",
     "env": {
-        "LEON_SESSION": {
+        "SPIKE_SESSION": {
             "description": "Enter the copied SESSION here ( Copied code starting with LEON;;;eyJj & ending with 9In0= ).",
             "required": true
         },
