@@ -1,6 +1,6 @@
 const chalk = require('chalk');
 const {WAConnection} = require('@adiwajshing/baileys');
-const {StringSession} = require('./leon/');
+const {StringSession} = require('./spike/');
 const fs = require('fs');
 
 async function start() {
