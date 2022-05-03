@@ -6,7 +6,7 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 
-DATABASE_URL = process.env.DATABASE_URL === undefined ? './leon.db' : process.env.DATABASE_URL;
+DATABASE_URL = process.env.DATABASE_URL === undefined ? './spike.db' : process.env.DATABASE_URL;
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
@@ -48,7 +48,7 @@ module.exports = {
         APP_NAME: process.env.HEROKU_APP_NAME === undefined ? '' : process.env.HEROKU_APP_NAME
     },
     DATABASE_URL: DATABASE_URL,
-    DATABASE: DATABASE_URL === './leon.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
+    DATABASE: DATABASE_URL === './spike.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
     RBG_API_KEY: process.env.REMOVE_BG_API_KEY === undefined ? 'false' : process.env.REMOVE_BG_API_KEY,
     NO_ONLINE: process.env.NO_ONLINE === undefined ? true : convertToBool(process.env.NO_ONLINE),
     SUDO: process.env.SUDO === undefined ? false : process.env.SUDO,
