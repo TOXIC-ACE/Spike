@@ -17,7 +17,7 @@ node index.js
 
 [![Run on Repl.it](https://repl.it/badge/github/TOXIC-ACE/Spike)](https://replit.com/@TOXICACE/Spike)
 
-[![Deploy-Leon](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TOXIC-ACE/Spike)
+[![Deploy-Spike](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TOXIC-ACE/Spike)
 
 **Found a bug/glitch is bot? Or wanna feedback us? [`WhatsApp`](https://wa.me/972528293474?text=Hi)**
 
