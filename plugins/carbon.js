@@ -1,4 +1,4 @@
-let Leon = require('../events');
+let Spike = require('../events');
 let {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 let axios = require('axios');
 let fs = require('fs');
