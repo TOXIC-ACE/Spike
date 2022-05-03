@@ -1,4 +1,4 @@
-## Leon
+## Spike
 **A Simple WhatsApp Bot.**
 
 ## ⚙️ Setup ⚙️
@@ -6,18 +6,18 @@
 ```
 pkg install git
 pkg install nodejs
-git clone https://github.com/TOXIC-DEVIL/Leon
-cd Leon
+git clone https://github.com/TOXIC-ACE/Spike
+cd Spike
 npm i @adiwajshing/baileys
 npm i chalk
 node index.js
 ```
   
-## 💫 Deploy & Run Leon 💫
+## 💫 Deploy & Run Spike 💫
 
-[![Run on Repl.it](https://repl.it/badge/github/TOXIC-DEVIL/WhatsApp-Bot)](https://replit.com/@TOXICDEVIL/Leon)
+[![Run on Repl.it](https://repl.it/badge/github/TOXIC-ACE/Spike)](https://replit.com/@TOXICACE/Spike)
 
-[![Deploy-Leon](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TOXIC-DEVIL/Leon)
+[![Deploy-Leon](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TOXIC-ACE/Spike)
 
 **Found a bug/glitch is bot? Or wanna feedback us? [`WhatsApp`](https://wa.me/972528293474?text=Hi)**
 
@@ -25,7 +25,7 @@ node index.js
 
 ```
 By using kick, add, promote, demote Commands, Your WhatsApp account may be banned.
-Leon or we are not responsible for your account, 
+Spike or we are not responsible for your account, 
 This bot is intended for the purpose of having fun with some fun commands 
 and group management with some helpfull commands.
 
@@ -41,15 +41,13 @@ you can contact -
 
 ## 👨‍💻 Developers & Contributors 👨‍💻
 
- [![TOXIC-DEVIL](https://github.com/TOXIC-DEVIL.png?size=100)](https://github.com/TOXIC-DEVIL) |
+ [![TOXIC-ACE](https://github.com/TOXIC-ACE.png?size=100)](https://github.com/TOXIC-ACE) |
 ----|
-[TOXIC-DEVIL](https://github.com/TOXIC-DEVIL)  | 
+[TOXIC-ACE](https://github.com/TOXIC-ACE)  | 
 Author: Developer, Base, Bug Fixes, Commits, Modules | 
 
 ## THANKS TO
 
 - **[Adiwajshing](https://github.com/Adiwajshing) for [`Baileys`](https://github.com/adiwajshing/Baileys)**
-
-- **[TOXIC DEVIL](https://github.com/TOXIC-DEVIL) for [`TOXIC DEVIL API - FREE REST API`](https://api-toxic-devil.herokuapp.com/)**
 
 - **And all.**
