@@ -1,27 +1,26 @@
 {
-  "name": "Leon",
-  "version": "1.0.3",
+  "name": "Spike",
+  "version": "1.0.0",
   "description": "A Simple WhatsApp Bot.",
-  "main": "./Leon/bot.js",
+  "main": "./Spike/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TOXIC-DEVIL/Leon.git"
+    "url": "git+https://github.com/TOXIC-ACE/Spike.git"
   },
   "keywords": [
     "whatsapp",
     "bot",
-    "leon",
-    "whatsalexa"
+    "spike"
   ],
-  "developer": "TOXIC-DEVIL",
+  "developer": "TOXIC-ACE",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TOXIC-DEVIL/Leon/issues"
+    "url": "https://github.com/TOXIC-ACE/Spike/issues"
   },
-  "homepage": "https://github.com/TOXIC-DEVIL/Leon#readme",
+  "homepage": "https://github.com/TOXIC-ACE/Spike#readme",
   "dependencies": {
     "@adiwajshing/baileys": "3.5.3",
     "browser-id3-writer": "^4.4.0",
