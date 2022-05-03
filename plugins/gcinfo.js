@@ -1,4 +1,4 @@
-let Leon = require('../events');
+let Spike = require('../events');
 let { MessageType, Mimetype, GroupSettingChange, MessageOptions } = require('@adiwajshing/baileys');
 let Axios = require('axios');
 let fs = require('fs');
@@ -24,7 +24,7 @@ if (CON.LANG == 'ML') ADMİN_USER = '*📃 അഡ്‌മിൻ എണ്ണം
 
 if (CON.WORKTYPE == 'private') {
   
-    Leon.addCommand({ pattern: 'gcinfo$', fromMe: true, desc: Lang.PL_DESC }, async (message, match) => { 
+    Spike.addCommand({ pattern: 'gcinfo$', fromMe: true, desc: Lang.PL_DESC }, async (message, match) => { 
         if (message.jid.endsWith('g.us')) {
             var json = await message.client.groupMetadataMinimal(message.jid) 
             var code = await message.client.groupInviteCode(message.jid)
@@ -91,7 +91,7 @@ if (CON.WORKTYPE == 'private') {
 }
 else if (CON.WORKTYPE == 'public') {
   
-    Leon.addCommand({ pattern: 'gcinfo$', fromMe: true, desc: Lang.PL_DESC }, async (message, match) => { 
+    Spike.addCommand({ pattern: 'gcinfo$', fromMe: true, desc: Lang.PL_DESC }, async (message, match) => { 
         if (message.jid.endsWith('g.us')) {
             var json = await message.client.groupMetadataMinimal(message.jid) 
             var code = await message.client.groupInviteCode(message.jid)
