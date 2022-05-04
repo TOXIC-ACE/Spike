@@ -21,7 +21,7 @@ module.exports = {
     ERROR_ANALYZER: process.env.ERROR_ANALYZER === undefined ? 'true' : process.env.ERROR_ANALYZER,
     ANTIEMO: process.env.ANTI_EMOJI === undefined ? 'false' : process.env.ANTI_EMOJI,
     AUTOBIO: process.env.AUTO_BIO === undefined ? 'false' : process.env.AUTO_BIO,
-    OWNER: process.env.OWNER_NAME === undefined ? 'TOXIC DEVIL' : process.env.OWNER_NAME,
+    OWNER: process.env.OWNER_NAME === undefined ? 'ANSHIF SER' : process.env.OWNER_NAME,
     OWNERNUM: process.env.OWNER_NUMBER === undefined ? '0' : process.env.OWNER_NUMBER,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
