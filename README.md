@@ -11,12 +11,13 @@ cd Spike
 npm i @adiwajshing/baileys
 npm i chalk
 node index.js
+
 Done♥️
 ```
   
 ## 💫 Deploy & Run Spike 💫
 
-[![Run on Repl.it](https://repl.it/badge/github/TOXIC-ACE/Spike)](https://replit.com/@TOXICACE/Spike)
+[![Run on Repl.it](https://repl.it/badge/github/TOXIC-ACE/Spike)](https://replit.com/@ANSHIFMP4/Spike)
 
 [![Deploy-Spike](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TOXIC-ACE/Spike)
 
