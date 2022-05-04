@@ -219,12 +219,12 @@
         "updater": {
             "UPDATER_DESC": "Checks the update.",
             "UPDATE": "*Your bot is completely up-to-date!*",
-            "NEW_UPDATE": "*🥳 A new update available..!\nType *'#update now'* to update the Bot\n\n🆕 Changes After this update:\n\n```",
+            "NEW_UPDATE": "*🥵 A new update available..!\nType *'#update now'* to update the Bot\n\n🆕 Changes After this update:\n\n```",
             "UPDATE_NOW_DESC": "It makes updates.",
             "UPDATING": "🔁 Spike is Updating...!\n🕓 This may Take a few minutes.",
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
-            "UPDATED": "*✅ Successfully Updated! 🎉*",
-            "UPDATED_LOCAL": "*✅ Successfully Updated! 🎉*",
+            "UPDATED": "*✅ Successfully Updated! ♥️*",
+            "UPDATED_LOCAL": "*✅ Successfully Updated! ♥️*",
             "AFTER_UPDATE": "*💬 Spike Restarting Automatically!*"
         },
         "whois": {
