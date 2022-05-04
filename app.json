@@ -69,7 +69,7 @@
         "OWNER_NAME": {
             "description": "Enter the owner name, You must enter your name ( This name will be shown on some commands )",
             "required": false,
-            "value": "ANSHIF SER"
+            "value": "TOXIC ACE"
         },
         "AUTO_BIO": {
             "description": "Set true for auto date, time in biography.",
