@@ -11,6 +11,7 @@ cd Spike
 npm i @adiwajshing/baileys
 npm i chalk
 node index.js
+Done♥️
 ```
   
 ## 💫 Deploy & Run Spike 💫
